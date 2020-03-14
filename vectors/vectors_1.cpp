@@ -1,4 +1,5 @@
-// Example of vectors withsome of their function
+
+// Example of vectors with some of their function
 #include<iostream>
 #include"vector"
 #include<algorithm>
@@ -50,3 +51,12 @@ cout<<endl;
 sort(x.begin(),x.end(),rev); // sorting
 x.clear();
 cout<<"\nSize= "<<x.size()<<endl; // x.size() will give number of elements in vector
+for(int i=0;i<x.size();i++)
+{
+    cout<<x[i]<<" ";
+}
+cout<<"Vector Capacity : "<<x.capacity()<<endl; //How much capacity of vector
+cout<<x.max_size()<<endl;// will give maximum limit of extending capacity
+
+}
+
